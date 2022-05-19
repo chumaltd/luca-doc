@@ -27,3 +27,4 @@ publishDir = 'docs'
   BookTheme = "auto"
   BookRepo = 'https://chumaltd.github.io/luca-doc'
   BookComments = false
+  BookSection = '*'
