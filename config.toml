@@ -2,7 +2,7 @@ baseURL = 'https://chumaltd.github.io/luca-doc'
 DefaultContentLanguage = "en"
 title = 'LucaSuite'
 theme = 'hugo-book'
-enableGitInfo = true
+#enableGitInfo = true
 publishDir = 'docs'
 
 [languages]
