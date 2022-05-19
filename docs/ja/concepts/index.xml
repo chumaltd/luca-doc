@@ -13,7 +13,7 @@
       <pubDate>Wed, 18 May 2022 18:18:48 +0900</pubDate>
       
       <guid>https://chumaltd.github.io/luca-doc/ja/concepts/automation/</guid>
-      <description>LucaSuiteはシステムによる自動実行を実装しやすくするため、各ツールでCLIコマンドを提供しています。自動化フレームワークには、伝統的</description>
+      <description>自動化 # あらかじめロジックを定義できるデータの多くには自動化の余地があります。 適切なルールに沿った均質なデータ処理によってビジネスの一貫性が</description>
     </item>
     
   </channel>

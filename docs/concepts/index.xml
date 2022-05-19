@@ -7,5 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 May 2022 17:31:57 +0900</lastBuildDate><atom:link href="https://chumaltd.github.io/luca-doc/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automation</title>
+      <link>https://chumaltd.github.io/luca-doc/concepts/automation/</link>
+      <pubDate>Wed, 18 May 2022 18:18:48 +0900</pubDate>
+      
+      <guid>https://chumaltd.github.io/luca-doc/concepts/automation/</guid>
+      <description>Automation #  Much of the data for which logic can be defined in advance has room for automation. Mechanical data processing based on good rules enhances business consistency and reduces operational mistakes.
+It is important to harness limited human concentration for more important and irregular processes.
+LucaSuite&amp;rsquo;s automation approach #  LucaSuite provides CLI commands in each tool making it easier to implement automatic execution by the system.
+The automation framework includes Kubernetes native Tekton, traditional cron, or any other CI tool.</description>
+    </item>
+    
   </channel>
 </rss>
