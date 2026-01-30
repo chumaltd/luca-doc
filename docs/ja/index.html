@@ -2,40 +2,54 @@
 <html lang="ja" dir="ltr">
 <head>
 	<meta name="generator" content="Hugo 0.151.2">
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-  LucaSuite
-  #
-">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://chumaltd.github.io/luca-doc/ja/">
-  <meta property="og:site_name" content="LucaSuite">
-  <meta property="og:title" content="LucaSuite">
-  <meta property="og:description" content="LucaSuite #">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="website">
-<title>LucaSuite | LucaSuite</title>
-<link rel="manifest" href="/luca-doc/manifest.json">
-<link rel="icon" href="/luca-doc/favicon.png" type="image/x-icon">
-  <link rel="alternate" hreflang="en" href="https://chumaltd.github.io/luca-doc/" title="LucaSuite">
-<link rel="stylesheet" href="/luca-doc/book.min.1f68c38bb8ccaa541af6cd11cda67fd462e55334d4d0679849fc7b6fdbb80308.css" integrity="sha256-H2jDi7jMqlQa9s0RzaZ/1GLlUzTU0GeYSfx7b9u4Awg=" crossorigin="anonymous">
-  <script defer src="/luca-doc/flexsearch.min.js"></script>
-  <script defer src="/luca-doc/ja.search.min.97473445d2045746630e62ecf7ce7d44816d68446e073f16885d935f30a49f04.js" integrity="sha256-l0c0RdIEV0ZjDmLs9859RIFtaERuBz8WiF2TXzCknwQ=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://chumaltd.github.io/luca-doc/ja/index.xml" title="LucaSuite" />
-<!--
+  <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LucaSuite#">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://chumaltd.github.io/luca-doc/ja/">
+  <meta property="og:site_name" content="LucaSuite">
+  <meta property="og:title" content="LucaSuite">
+  <meta property="og:description" content="LucaSuite#">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="LucaSuite">
+  <meta itemprop="description" content="LucaSuite#">
+  <meta itemprop="datePublished" content="2022-05-18T17:31:57+09:00">
+  <meta itemprop="dateModified" content="2022-05-18T17:31:57+09:00">
+  <meta itemprop="wordCount" content="1">
+
+<title>LucaSuite | LucaSuite</title>
+<link rel="icon" href="/luca-doc/favicon.png" >
+<link rel="manifest" href="/luca-doc/manifest.json">
+<link rel="canonical" href="https://chumaltd.github.io/luca-doc/ja/">
+  <link rel="alternate" hreflang="en" href="https://chumaltd.github.io/luca-doc/" title="LucaSuite">
+<link rel="stylesheet" href="/luca-doc/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
+
+
+  <script defer src="/luca-doc/fuse.min.js"></script>
+  <script defer src="/luca-doc/ja.search.min.dd187414d0a1a1af56ff2f3412c48111492b8021eaa353adf9ed1c29bc407b64.js" integrity="sha256-3Rh0FNChoa9W/y80EsSBEUkrgCHqo1Ot&#43;e0cKbxAe2Q=" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" href="https://chumaltd.github.io/luca-doc/ja/index.xml" title="LucaSuite" />
+
   
 </head>
-<body dir="ltr">
+<body dir="ltr" class="book-kind-home book-type-page">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
   <nav>
 <h2 class="book-brand">
   <a class="flex align-center" href="/luca-doc/ja/"><span>LucaSuite</span>
@@ -43,16 +57,19 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="検索" aria-label="検索" maxlength="64" data-hotkeys="s/" />
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="検索"
+    aria-label="検索"
+    maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
   
-
 
 
   
@@ -66,17 +83,18 @@ https://github.com/alex-shpak/hugo-book
 <ul class="book-languages">
   <li>
     <input type="checkbox" id="languages" class="toggle" />
-    <label for="languages" class="flex justify-between">
-      <a role="button" class="flex align-center">
-        <img src="/luca-doc/svg/translate.svg" class="book-icon" alt="Languages" />
+    <label for="languages" class="flex">
+      <a role="button">
+        <img src="/luca-doc/icons/translate.svg" class="book-icon" alt="Languages" />
         Japanese
       </a>
+      <img src="/luca-doc/icons/chevron-right.svg" class="book-icon" alt="Expand" />
     </label>
 
     <ul>
       
       <li>
-        <a href="https://chumaltd.github.io/luca-doc/">
+        <a href="/luca-doc/" class="flex flex-auto">
           English
         </a>
       </li>
@@ -94,9 +112,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-
   
 
 
@@ -111,7 +126,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <span>コンセプト</span>
+    <a>
+      コンセプト</a>
   
 
           
@@ -124,7 +140,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/luca-doc/ja/concepts/automation/" class="">自動化</a>
+    <a href="/luca-doc/ja/concepts/automation/" class="">
+      自動化</a>
   
 
         </li>
@@ -142,7 +159,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/luca-doc/ja/local/" class="">日本ローカル機能</a>
+    <a href="/luca-doc/ja/local/" class="">
+      日本ローカル機能</a>
   
 
           
@@ -155,7 +173,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/luca-doc/ja/local/yearend-adjust/" class="">所得税の年末調整</a>
+    <a href="/luca-doc/ja/local/yearend-adjust/" class="">
+      所得税の年末調整</a>
   
 
         </li>
@@ -167,8 +186,6 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
-
-
 
 
 
@@ -190,47 +207,34 @@ https://github.com/alex-shpak/hugo-book
   <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
+
+  </div>
+</aside>
  
-      </div>
-    </aside>
 
     <div class="book-page">
-      <header class="book-header">
+      <header class="book-header hidden">
         
   <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/luca-doc/svg/menu.svg" class="book-icon" alt="Menu" />
+    <img src="/luca-doc/icons/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>LucaSuite</strong>
+  <h3>LucaSuite</h3>
 
   <label for="toc-control">
-    
-    <img src="/luca-doc/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents"></nav>
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="lucasuite">
-  LucaSuite
-  <a class="anchor" href="#lucasuite">#</a>
-</h1>
+  <article class="markdown book-article"><h1 id="lucasuite">LucaSuite<a class="anchor" href="#lucasuite">#</a></h1>
 </article>
  
       
@@ -239,45 +243,62 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
+<div>
 
+</div>
 
+<div>
 
+</div>
 
 </div>
 
 
 
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  
+
+
+
+  
+  
+  
 
 
  
         
-      </footer>
-
-      
   
  
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
   
-<nav id="TableOfContents"></nav>
-
-
  
-      </div>
-    </aside>
-    
   </main>
 
   
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 

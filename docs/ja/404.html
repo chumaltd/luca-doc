@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
 
-  <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://chumaltd.github.io/luca-doc/ja/404.html">
   <meta property="og:site_name" content="LucaSuite">
   <meta property="og:title" content="404 Page not found">
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="404 Page not found">
+
 <title>404 Page not found | LucaSuite</title>
+<link rel="icon" href="/luca-doc/favicon.png" >
 <link rel="manifest" href="/luca-doc/manifest.json">
-<link rel="icon" href="/luca-doc/favicon.png" type="image/x-icon">
+<link rel="canonical" href="https://chumaltd.github.io/luca-doc/ja/404.html">
   <link rel="alternate" hreflang="en" href="https://chumaltd.github.io/luca-doc/404.html" title="404 Page not found">
-<link rel="stylesheet" href="/luca-doc/book.min.1f68c38bb8ccaa541af6cd11cda67fd462e55334d4d0679849fc7b6fdbb80308.css" integrity="sha256-H2jDi7jMqlQa9s0RzaZ/1GLlUzTU0GeYSfx7b9u4Awg=" crossorigin="anonymous">
-  <script defer src="/luca-doc/flexsearch.min.js"></script>
-  <script defer src="/luca-doc/ja.search.min.97473445d2045746630e62ecf7ce7d44816d68446e073f16885d935f30a49f04.js" integrity="sha256-l0c0RdIEV0ZjDmLs9859RIFtaERuBz8WiF2TXzCknwQ=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-    
+<link rel="stylesheet" href="/luca-doc/book.min.6970156cec683193d93c9c4edaf0d56574e4361df2e0c1be4f697ae81c3ba55f.css" integrity="sha256-aXAVbOxoMZPZPJxO2vDVZXTkNh3y4MG&#43;T2l66Bw7pV8=" crossorigin="anonymous">
 
-    <style>
-      .not-found {
-        text-align: center;
-      }
-      .not-found h1 {
-        margin: .25em 0 0 0;
-        opacity: .25;
-        font-size: 40vmin;
-      }
-    </style>
-  </head>
 
-  <body>
-    <main class="flex justify-center not-found">
-      <div>
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <h3>
-          <a href="/luca-doc/ja/">LucaSuite</a>
-        </h3>
-      </div>
-    </main>
+  <script defer src="/luca-doc/fuse.min.js"></script>
+  <script defer src="/luca-doc/ja.search.min.dd187414d0a1a1af56ff2f3412c48111492b8021eaa353adf9ed1c29bc407b64.js" integrity="sha256-3Rh0FNChoa9W/y80EsSBEUkrgCHqo1Ot&#43;e0cKbxAe2Q=" crossorigin="anonymous"></script>
 
-    
-  </body>
 
-  </html>
+
+  
+
+  <style>
+    .not-found {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .not-found h1 {
+      font-size: 10vmin;
+      font-weight: lighter;
+      cursor: default;
+    }
+
+    .not-found h1 span {
+      display: inline-block;
+      transition: transform .2s ease-out, opacity .2s ease-out;
+    }
+
+    .not-found h1:hover span {
+      transition-duration: 1s;
+      transform: translate(var(--drift-x), var(--drift-y)) rotate(var(--rotate-end));
+      opacity: 0;
+    }
+
+    .not-found h1:hover span:nth-child(1) {
+      --drift-x: -1em;
+      --drift-y: 1em;
+      --rotate-end: -90deg;
+    }
+
+    .not-found h1:hover span:nth-child(2) {
+      --drift-x: -1em;
+      --drift-y: -2em;
+      --rotate-end: 45deg;
+    }
+
+    .not-found h1:hover span:nth-child(3) {
+      --drift-x: 3em;
+      --drift-y: 1em;
+      --rotate-end: 120deg;
+    }
+  </style>
+</head>
+
+<body class="not-found flex justify-center align-center">
+  <main class="text-center">
+    <h1>
+      <span>Page</span>
+      <span>Not</span>
+      <span>Found</span>
+    </h1>
+    <h3>
+      <a href="/luca-doc/ja/">LucaSuite</a>
+    </h3>
+  </main>
+
+  
+</body>
+
+</html>
