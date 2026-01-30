@@ -13,7 +13,7 @@
       <link>https://chumaltd.github.io/luca-doc/ja/local/yearend-adjust/</link>
       <pubDate>Fri, 30 Jan 2026 15:33:27 +0900</pubDate>
       <guid>https://chumaltd.github.io/luca-doc/ja/local/yearend-adjust/</guid>
-      <description>&lt;p&gt;年末調整のフローは、次の3段階です。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;年末調整申告データインポート&lt;/li&gt;&#xA;&lt;li&gt;年間所得税の計算&lt;/li&gt;&#xA;&lt;li&gt;給与支払報告データエクスポート&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;年末調整申告データインポート&#34;&gt;&#xA;  年末調整申告データインポート&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b9%b4%e6%9c%ab%e8%aa%bf%e6%95%b4%e7%94%b3%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%b3%e3%83%9d%e3%83%bc%e3%83%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;国税庁が提供する&lt;a href=&#34;https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm&#34;&gt;年末調整控除申告書作成用アプリ&lt;/a&gt;の出力データをインポートします。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;所得税の年末調整&#34;&gt;&#xA;  所得税の年末調整&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%89%80%e5%be%97%e7%a8%8e%e3%81%ae%e5%b9%b4%e6%9c%ab%e8%aa%bf%e6%95%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;年末調整のフローは、次の3段階です。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;年末調整申告データインポート&lt;/li&gt;&#xA;&lt;li&gt;年間所得税の計算&lt;/li&gt;&#xA;&lt;li&gt;給与支払報告データエクスポート&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;年末調整申告データインポート&#34;&gt;&#xA;  年末調整申告データインポート&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b9%b4%e6%9c%ab%e8%aa%bf%e6%95%b4%e7%94%b3%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%b3%e3%83%9d%e3%83%bc%e3%83%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;国税庁が提供する&lt;a href=&#34;https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm&#34;&gt;年末調整控除申告書作成用アプリ&lt;/a&gt;の出力データをインポートします。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
