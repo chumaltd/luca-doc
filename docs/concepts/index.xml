@@ -4,20 +4,16 @@
     <title>Concepts on LucaSuite</title>
     <link>https://chumaltd.github.io/luca-doc/concepts/</link>
     <description>Recent content in Concepts on LucaSuite</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 May 2022 17:31:57 +0900</lastBuildDate><atom:link href="https://chumaltd.github.io/luca-doc/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 18:18:48 +0900</lastBuildDate>
+    <atom:link href="https://chumaltd.github.io/luca-doc/concepts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation</title>
       <link>https://chumaltd.github.io/luca-doc/concepts/automation/</link>
       <pubDate>Wed, 18 May 2022 18:18:48 +0900</pubDate>
-      
       <guid>https://chumaltd.github.io/luca-doc/concepts/automation/</guid>
-      <description>Automation #  Much of the data for which logic can be defined in advance has room for automation. Mechanical data processing based on good rules enhances business consistency and reduces operational mistakes.
-It is important to harness limited human concentration for more important and irregular processes.
-LucaSuite&amp;rsquo;s automation approach #  LucaSuite provides CLI commands in each tool making it easier to implement automatic execution by the system.
-The automation framework includes Kubernetes native Tekton, traditional cron, or any other CI tool.</description>
+      <description>&lt;h1 id=&#34;automation&#34;&gt;&#xA;  Automation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#automation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Much of the data for which logic can be defined in advance has room for automation.&#xA;Mechanical data processing based on good rules enhances business consistency and reduces operational mistakes.&lt;/p&gt;&#xA;&lt;p&gt;It is important to harness limited human concentration for more important and irregular processes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;lucasuites-automation-approach&#34;&gt;&#xA;  LucaSuite&amp;rsquo;s automation approach&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#lucasuites-automation-approach&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;LucaSuite provides CLI commands in each tool making it easier to implement automatic execution by the system.&lt;/p&gt;&#xA;&lt;p&gt;The automation framework includes Kubernetes native &lt;a href=&#34;https://tekton.dev/&#34;&gt;Tekton&lt;/a&gt;, traditional cron, or any other CI tool.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

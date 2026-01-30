@@ -4,17 +4,16 @@
     <title>コンセプト on LucaSuite</title>
     <link>https://chumaltd.github.io/luca-doc/ja/concepts/</link>
     <description>Recent content in コンセプト on LucaSuite</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 May 2022 17:31:57 +0900</lastBuildDate><atom:link href="https://chumaltd.github.io/luca-doc/ja/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 18:18:48 +0900</lastBuildDate>
+    <atom:link href="https://chumaltd.github.io/luca-doc/ja/concepts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自動化</title>
       <link>https://chumaltd.github.io/luca-doc/ja/concepts/automation/</link>
       <pubDate>Wed, 18 May 2022 18:18:48 +0900</pubDate>
-      
       <guid>https://chumaltd.github.io/luca-doc/ja/concepts/automation/</guid>
-      <description>自動化 # あらかじめロジックを定義できるデータの多くには自動化の余地があります。 適切なルールに沿った均質なデータ処理によってビジネスの一貫性が</description>
+      <description>&lt;h1 id=&#34;自動化&#34;&gt;&#xA;  自動化&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%87%aa%e5%8b%95%e5%8c%96&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;あらかじめロジックを定義できるデータの多くには自動化の余地があります。&lt;br&gt;&#xA;適切なルールに沿った均質なデータ処理によってビジネスの一貫性が強まり、事務的なミスも減らせます。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LucaSuite</title>
-    <link>https://chumaltd.github.io/luca-doc/ja/</link>
-    <description>Recent content on LucaSuite</description>
+    <title>日本ローカル機能 on LucaSuite</title>
+    <link>https://chumaltd.github.io/luca-doc/ja/local/</link>
+    <description>Recent content in 日本ローカル機能 on LucaSuite</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 30 Jan 2026 15:33:27 +0900</lastBuildDate>
-    <atom:link href="https://chumaltd.github.io/luca-doc/ja/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chumaltd.github.io/luca-doc/ja/local/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>所得税の年末調整</title>
       <link>https://chumaltd.github.io/luca-doc/ja/local/yearend-adjust/</link>
       <pubDate>Fri, 30 Jan 2026 15:33:27 +0900</pubDate>
       <guid>https://chumaltd.github.io/luca-doc/ja/local/yearend-adjust/</guid>
       <description>&lt;p&gt;年末調整のフローは、次の3段階です。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;年末調整申告データインポート&lt;/li&gt;&#xA;&lt;li&gt;年間所得税の計算&lt;/li&gt;&#xA;&lt;li&gt;給与支払報告データエクスポート&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;年末調整申告データインポート&#34;&gt;&#xA;  年末調整申告データインポート&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b9%b4%e6%9c%ab%e8%aa%bf%e6%95%b4%e7%94%b3%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%b3%e3%83%9d%e3%83%bc%e3%83%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;国税庁が提供する&lt;a href=&#34;https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm&#34;&gt;年末調整控除申告書作成用アプリ&lt;/a&gt;の出力データをインポートします。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>自動化</title>
-      <link>https://chumaltd.github.io/luca-doc/ja/concepts/automation/</link>
-      <pubDate>Wed, 18 May 2022 18:18:48 +0900</pubDate>
-      <guid>https://chumaltd.github.io/luca-doc/ja/concepts/automation/</guid>
-      <description>&lt;h1 id=&#34;自動化&#34;&gt;&#xA;  自動化&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%87%aa%e5%8b%95%e5%8c%96&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;あらかじめロジックを定義できるデータの多くには自動化の余地があります。&lt;br&gt;&#xA;適切なルールに沿った均質なデータ処理によってビジネスの一貫性が強まり、事務的なミスも減らせます。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

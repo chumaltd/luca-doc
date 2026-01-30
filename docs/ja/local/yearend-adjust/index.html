@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="年末調整のフローは、次の3段階です。
+
+年末調整申告データインポート
+年間所得税の計算
+給与支払報告データエクスポート
+
+
+  年末調整申告データインポート
+  #
+
+国税庁が提供する年末調整控除申告書作成用アプリの出力データをインポートします。">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://chumaltd.github.io/luca-doc/ja/local/yearend-adjust/">
+  <meta property="og:site_name" content="LucaSuite">
+  <meta property="og:title" content="所得税の年末調整">
+  <meta property="og:description" content="年末調整のフローは、次の3段階です。
+年末調整申告データインポート 年間所得税の計算 給与支払報告データエクスポート 年末調整申告データインポート # 国税庁が提供する年末調整控除申告書作成用アプリの出力データをインポートします。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="local">
+    <meta property="article:published_time" content="2026-01-30T15:33:27+09:00">
+    <meta property="article:modified_time" content="2026-01-30T15:33:27+09:00">
+<title>所得税の年末調整 | LucaSuite</title>
+<link rel="manifest" href="/luca-doc/manifest.json">
+<link rel="icon" href="/luca-doc/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/luca-doc/book.min.1f68c38bb8ccaa541af6cd11cda67fd462e55334d4d0679849fc7b6fdbb80308.css" integrity="sha256-H2jDi7jMqlQa9s0RzaZ/1GLlUzTU0GeYSfx7b9u4Awg=" crossorigin="anonymous">
+  <script defer src="/luca-doc/flexsearch.min.js"></script>
+  <script defer src="/luca-doc/ja.search.min.54fa3720dd2566ead61506e1fb654444eb012bd9d32ac3f49c9a27dec5bd7523.js" integrity="sha256-VPo3IN0lZurWFQbh&#43;2VEROsBK9nTKsP0nJon3sW9dSM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/luca-doc/ja/"><span>LucaSuite</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="検索" aria-label="検索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/luca-doc/svg/translate.svg" class="book-icon" alt="Languages" />
+        Japanese
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://chumaltd.github.io/luca-doc/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>コンセプト</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/luca-doc/ja/concepts/automation/" class="">自動化</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/luca-doc/ja/local/" class="">日本ローカル機能</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/luca-doc/ja/local/yearend-adjust/" class="active">所得税の年末調整</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/luca-doc/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>所得税の年末調整</strong>
+
+  <label for="toc-control">
+    
+    <img src="/luca-doc/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#年末調整申告データインポート">年末調整申告データインポート</a>
+      <ul>
+        <li><a href="#前提">前提</a></li>
+        <li><a href="#インポート対象の申告書">インポート対象の申告書</a></li>
+        <li><a href="#操作">操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#年間所得税の計算">年間所得税の計算</a>
+      <ul>
+        <li><a href="#操作-1">操作</a></li>
+        <li><a href="#開発コメント">開発コメント</a></li>
+      </ul>
+    </li>
+    <li><a href="#給与支払報告データエクスポート">給与支払報告データエクスポート</a>
+      <ul>
+        <li><a href="#前提-1">前提</a></li>
+        <li><a href="#操作-2">操作</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>年末調整のフローは、次の3段階です。</p>
+<ol>
+<li>年末調整申告データインポート</li>
+<li>年間所得税の計算</li>
+<li>給与支払報告データエクスポート</li>
+</ol>
+<h2 id="年末調整申告データインポート">
+  年末調整申告データインポート
+  <a class="anchor" href="#%e5%b9%b4%e6%9c%ab%e8%aa%bf%e6%95%b4%e7%94%b3%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%b3%e3%83%9d%e3%83%bc%e3%83%88">#</a>
+</h2>
+<p>国税庁が提供する<a href="https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm">年末調整控除申告書作成用アプリ</a>の出力データをインポートします。</p>
+<h3 id="前提">
+  前提
+  <a class="anchor" href="#%e5%89%8d%e6%8f%90">#</a>
+</h3>
+<p><code>luca-jp</code>の年末調整機能は給与計算データの自動入力を目的としています。<br>
+申告書の保管はサポートしていません。ファイルまたは紙の保管は別途運用してください。</p>
+<ul>
+<li>アプリが出力するzipファイルをインポート対象とします
+<ul>
+<li>パスワード付きのzipはサポートしていません。あらかじめ解凍したディレクトリからはインポートできます。各個人のデータには複数のXMLファイルがあるため、ディレクトリは必要です</li>
+<li>電子署名付きデータはそのままインポート可能です</li>
+</ul>
+</li>
+<li>インポートする個人に対応するLucaSalaryのプロファイルが、プロジェクトディレクトリの<code>data/s_profiles/</code>に存在している必要があります
+<ul>
+<li>プロファイルが見つからなかったインポートデータはリジェクトされます</li>
+<li><code>s_profiles/</code>は暗号化する個人情報を<code>profiles/</code>とは別に配置する想定のディレクトリです。自動で作成されません</li>
+</ul>
+</li>
+<li>個人番号にもとづいてLucaSalaryプロファイルと年末調整アプリのデータを照合します
+<ul>
+<li>アプリの操作時に本人と家族の個人番号を入力・エクスポートする必要があります</li>
+<li>いずれかのデータが個人番号を持たない場合、氏名と生年月日の完全一致による照合を行います</li>
+<li>これらの入力に不備がある場合、インポートできずリジェクトします。氏名照合にフォールバックする場合、異体字の表記揺れや改姓などの影響が考えられます</li>
+</ul>
+</li>
+</ul>
+<h3 id="インポート対象の申告書">
+  インポート対象の申告書
+  <a class="anchor" href="#%e3%82%a4%e3%83%b3%e3%83%9d%e3%83%bc%e3%83%88%e5%af%be%e8%b1%a1%e3%81%ae%e7%94%b3%e5%91%8a%e6%9b%b8">#</a>
+</h3>
+<p>現時点では、サポートしている申告書は一部です。</p>
+<ul>
+<li>扶養控除等申告書</li>
+<li>配偶者控除等申告書</li>
+</ul>
+<h3 id="操作">
+  操作
+  <a class="anchor" href="#%e6%93%8d%e4%bd%9c">#</a>
+</h3>
+<p>LucaSalaryのプロジェクトディレクトリで<code>luca-jp nenmatsu-chousei</code>サブコマンドを実行します。<br>
+<code>data/s_profiles/</code>ディレクトリが存在している必要があるため、LucaSalaryの暗号化を利用している場合にはあらかじめ<code>luca-salary decrypt</code>で復号しておきます。</p>
+<pre><code class="language-bash">luca-jp nenmatsu[-chousei] &lt;インポートpath&gt; [IDの部分文字列]
+</code></pre>
+<p>1人分のデータをインポートするケースでは、<code>インポートpath</code>はzipファイルまたはそれを解凍したディレクトリです。絶対pathで指定した方が確実です。<br>
+インポート時に個人の自動照合がうまく動作しない場合、<code>IDの部分文字列</code>を追加することで特定プロファイルに強制的に関連づけてインポートできます。このIDはLucaSalaryプロファイルの<code>id</code>です。</p>
+<p>複数の人のデータをバルクインポートする場合には、<code>インポートpath</code>は複数のzipを含むディレクトリです。解凍したサブディレクトリを含んでいても動作します。</p>
+<p>自動照合に失敗したzipファイルは標準エラー出力へのエラーメッセージとともに処理スキップし、<code>rejected/</code>ディレクトリに移動します。</p>
+<p>インポートが完了したら必要に応じて<code>luca-salary encrypt</code>で暗号化してコミットします。</p>
+<h2 id="年間所得税の計算">
+  年間所得税の計算
+  <a class="anchor" href="#%e5%b9%b4%e9%96%93%e6%89%80%e5%be%97%e7%a8%8e%e3%81%ae%e8%a8%88%e7%ae%97">#</a>
+</h2>
+<p>年末調整プロファイルにもとづいて、所得税の年額を計算します。</p>
+<h3 id="操作-1">
+  操作
+  <a class="anchor" href="#%e6%93%8d%e4%bd%9c-1">#</a>
+</h3>
+<p>LucaSalaryのプロジェクトディレクトリで<code>luca-salary payment total</code>サブコマンドを実行します。<br>
+<code>s_profiles/</code>にも個人データを置く構成では、自動でプロファイルを統合します。LucaSalaryの暗号化を利用している場合にはあらかじめ<code>luca-salary decrypt</code>で復号しておきます。</p>
+<pre><code class="language-bash">luca-salary payment total &lt;集計対象年&gt;
+</code></pre>
+<p><code>data/payments/total/</code>ディレクトリに年間集計データを生成します。</p>
+<p>調整額を精算月の支払データに反映するには、<code>--adjust</code>オプション付きで次のコマンドを実行します。</p>
+<pre><code class="language-bash">luca-salary payment total --adjust &lt;給与支払年&gt; &lt;月&gt;
+</code></pre>
+<p>このコマンドは調整額を反映するもので、あらかじめ該当月の支払データが存在していることを前提としています。</p>
+<p>LucaBookへの仕訳エクスポートも<code>--adjust</code>実行後のデータでは預り金で調整されています。</p>
+<h3 id="開発コメント">
+  開発コメント
+  <a class="anchor" href="#%e9%96%8b%e7%99%ba%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88">#</a>
+</h3>
+<p>年間の通算調整じたいは広く各国に存在する想定により、この操作は<code>luca-salary</code>のサブコマンドに割り当てています。</p>
+<p>実処理は各国特有の処理となるため、会社の国コード設定にもとづいて<code>luca-jp</code>の機能を呼び出しています。</p>
+<h2 id="給与支払報告データエクスポート">
+  給与支払報告データエクスポート
+  <a class="anchor" href="#%e7%b5%a6%e4%b8%8e%e6%94%af%e6%89%95%e5%a0%b1%e5%91%8a%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a8%e3%82%af%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%88">#</a>
+</h2>
+<p>eLTAXのPCDesk向けCSVをエクスポートします。</p>
+<h3 id="前提-1">
+  前提
+  <a class="anchor" href="#%e5%89%8d%e6%8f%90-1">#</a>
+</h3>
+<ul>
+<li>プロファイルの<code>resident.area_code</code>に自治体コードが必要です</li>
+<li>プロファイルの<code>resident.tax_id</code>に各自治体の識別番号が必要です
+<ul>
+<li>このコードは該当自治体に初回申請する場合には取得していません。設定なしのまま申告します。
+<ul>
+<li>翌年の住民税の徴収通知の際に割り当てられています</li>
+<li>eLTAXの仕様により識別番号がない場合には通知は紙になります</li>
+</ul>
+</li>
+<li><code>resident.tax_id</code>は会社に割り当てられるIDであるため、個人のプロファイル設定は本来適切ではありません。将来は会社の設定に移動する予定です</li>
+</ul>
+</li>
+</ul>
+<h3 id="操作-2">
+  操作
+  <a class="anchor" href="#%e6%93%8d%e4%bd%9c-2">#</a>
+</h3>
+<p>LucaSalaryのプロジェクトディレクトリで<code>luca-jp kyuyo</code>サブコマンドを実行します。<br>
+データは標準出力に表示されるため、ファイル保存するには任意のpathにリダイレクトします。</p>
+<pre><code class="language-bash">luca-jp kyuyo &lt;報告対象年&gt; &gt; export.csv
+</code></pre>
+<p><code>s_profiles/</code>にも個人データを置く構成では、自動でプロファイルを統合します。LucaSalaryの暗号化を利用している場合にはあらかじめ<code>luca-salary decrypt</code>で復号しておきます。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#年末調整申告データインポート">年末調整申告データインポート</a>
+      <ul>
+        <li><a href="#前提">前提</a></li>
+        <li><a href="#インポート対象の申告書">インポート対象の申告書</a></li>
+        <li><a href="#操作">操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#年間所得税の計算">年間所得税の計算</a>
+      <ul>
+        <li><a href="#操作-1">操作</a></li>
+        <li><a href="#開発コメント">開発コメント</a></li>
+      </ul>
+    </li>
+    <li><a href="#給与支払報告データエクスポート">給与支払報告データエクスポート</a>
+      <ul>
+        <li><a href="#前提-1">前提</a></li>
+        <li><a href="#操作-2">操作</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
